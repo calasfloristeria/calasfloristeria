@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calas Floristería EC </title>
-    <meta name="description" content="Floristería profesional en Quito, Ecuador. Arreglos florales únicos para bodas, eventos y ocasiones especiales. Entrega a domicilio disponible.">
-    <meta name="keywords" content="floristería Quito, arreglos florales Ecuador, bodas flores, eventos florales, entrega flores domicilio">
-    <link rel="manifest" href="#" id="manifest-placeholder">
-    <meta name="theme-color" content="#8b6f47">
+    <title>Calas Floristería EC | Floristería hermosa y vanguardista</title>
+    <meta name="description" content="Floristería profesional en Quito-Tababela, Ecuador. Arreglos florales únicos para bodas, eventos y ocasiones especiales. Entrega a domicilio disponible.">
+    <meta name="keywords" content="floristería Quito, arreglos florales Ecuador, bodas flores, eventos florales, entrega flores domicilio, Tababela, aeropuerto Quito">
+    <meta name="theme-color" content="#dc2626">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="default">+593958719630
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="Calas Floristería">
-    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%238b6f47'/><text y='70' font-size='60' text-anchor='middle' x='50'>🌸</text></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23dc2626'/><text y='70' font-size='60' text-anchor='middle' x='50'>🌸</text></svg>">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600;700&family=Lora:wght@300;400;600&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
         
         * {
             margin: 0;
@@ -23,21 +22,24 @@
         }
         
         :root {
-            --vintage-cream: #f7f3e9;
-            --vintage-gold: #d4af37;
-            --vintage-sage: #9caf88;
-            --vintage-rose: #d4a5a5;
-            --vintage-brown: #8b6f47;
-            --vintage-dark: #3e2723;
-            --shadow-soft: 0 8px 32px rgba(139, 111, 71, 0.1);
-            --shadow-hover: 0 12px 48px rgba(139, 111, 71, 0.2);
+            --primary-red: #dc2626;
+            --dark-red: #b91c1c;
+            --light-red: #fecaca;
+            --pure-white: #ffffff;
+            --light-gray: #f8fafc;
+            --medium-gray: #64748b;
+            --dark-gray: #334155;
+            --charcoal: #1e293b;
+            --shadow-light: 0 4px 16px rgba(220, 38, 38, 0.1);
+            --shadow-medium: 0 8px 32px rgba(220, 38, 38, 0.15);
+            --shadow-heavy: 0 16px 48px rgba(220, 38, 38, 0.2);
         }
         
         body {
-            font-family: 'Lora', serif;
+            font-family: 'Inter', sans-serif;
             line-height: 1.6;
-            color: var(--vintage-dark);
-            background: linear-gradient(135deg, var(--vintage-cream) 0%, #f0ede4 100%);
+            color: var(--dark-gray);
+            background: var(--pure-white);
             overflow-x: hidden;
         }
         
@@ -54,12 +56,12 @@
         
         .petal {
             position: absolute;
-            width: 20px;
-            height: 20px;
-            background: var(--vintage-rose);
+            width: 12px;
+            height: 12px;
+            background: var(--light-red);
             border-radius: 50% 0 50% 0;
-            opacity: 0.3;
-            animation: float 15s infinite linear;
+            opacity: 0.4;
+            animation: float 20s infinite linear;
         }
         
         @keyframes float {
@@ -68,10 +70,10 @@
                 opacity: 0;
             }
             10% {
-                opacity: 0.3;
+                opacity: 0.4;
             }
             90% {
-                opacity: 0.3;
+                opacity: 0.4;
             }
             100% {
                 transform: translateY(100vh) rotate(360deg);
@@ -80,14 +82,14 @@
         }
         
         .header {
-            background: linear-gradient(45deg, var(--vintage-cream), #f9f6f0);
+            background: var(--pure-white);
             padding: 1rem 0;
             position: sticky;
             top: 0;
             z-index: 1000;
-            backdrop-filter: blur(10px);
-            border-bottom: 2px solid var(--vintage-gold);
-            box-shadow: var(--shadow-soft);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--light-gray);
+            box-shadow: var(--shadow-light);
         }
         
         .nav-container {
@@ -101,76 +103,88 @@
         
         .logo {
             font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 700;
-            color: var(--vintage-brown);
+            color: var(--primary-red);
             text-decoration: none;
             position: relative;
             transition: all 0.3s ease;
         }
         
         .logo::after {
-            content: '🌸';
+            content: '🌹';
             margin-left: 0.5rem;
             font-size: 1.5rem;
-            animation: pulse 2s infinite;
+            animation: pulse 3s infinite;
         }
         
         @keyframes pulse {
             0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.1); }
+            50% { transform: scale(1.05); }
         }
         
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 2rem;
+            gap: 2.5rem;
         }
         
         .nav-menu a {
             text-decoration: none;
-            color: var(--vintage-brown);
+            color: var(--dark-gray);
             font-weight: 500;
             position: relative;
             transition: all 0.3s ease;
             padding: 0.5rem 1rem;
-            border-radius: 25px;
+            border-radius: 8px;
         }
         
         .nav-menu a:hover {
-            color: var(--vintage-gold);
-            background: rgba(212, 175, 55, 0.1);
+            color: var(--primary-red);
+            background: var(--light-red);
             transform: translateY(-2px);
         }
         
         .hero {
             height: 100vh;
-            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), 
-                        url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="floral" patternUnits="userSpaceOnUse" width="200" height="200"><circle cx="100" cy="100" r="50" fill="%23d4a5a5" opacity="0.1"/><path d="M80 80 Q100 60 120 80 Q100 100 80 80" fill="%239caf88" opacity="0.2"/></pattern></defs><rect width="100%" height="100%" fill="%23f7f3e9"/><rect width="100%" height="100%" fill="url(%23floral)"/></svg>');
-            background-size: cover;
-            background-position: center;
+            background: linear-gradient(135deg, var(--pure-white) 0%, var(--light-gray) 100%);
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
             position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><defs><pattern id="roses" patternUnits="userSpaceOnUse" width="300" height="300"><circle cx="150" cy="150" r="60" fill="%23fecaca" opacity="0.3"/><path d="M120 120 Q150 100 180 120 Q150 150 120 120" fill="%23dc2626" opacity="0.1"/></pattern></defs><rect width="100%" height="100%" fill="url(%23roses)"/></svg>');
+            background-size: cover;
+            opacity: 0.5;
         }
         
         .hero-content {
             max-width: 800px;
-            padding: 2rem;
-            background: rgba(247, 243, 233, 0.95);
-            border-radius: 20px;
-            box-shadow: var(--shadow-hover);
-            backdrop-filter: blur(10px);
-            border: 3px solid var(--vintage-gold);
-            animation: fadeInUp 1s ease-out;
+            padding: 3rem;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 24px;
+            box-shadow: var(--shadow-heavy);
+            backdrop-filter: blur(20px);
+            border: 2px solid var(--light-red);
+            animation: fadeInUp 1.2s ease-out;
+            position: relative;
+            z-index: 1;
         }
         
         @keyframes fadeInUp {
             from {
                 opacity: 0;
-                transform: translateY(50px);
+                transform: translateY(60px);
             }
             to {
                 opacity: 1;
@@ -180,33 +194,39 @@
         
         .hero h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 4rem;
-            margin-bottom: 1rem;
-            color: var(--vintage-brown);
+            font-size: 4.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--charcoal);
             text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-            line-height: 1.2;
+            line-height: 1.1;
+        }
+        
+        .hero .highlight {
+            color: var(--primary-red);
         }
         
         .hero p {
-            font-size: 1.5rem;
-            margin-bottom: 2rem;
-            color: var(--vintage-sage);
-            font-style: italic;
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+            color: var(--medium-gray);
+            font-weight: 400;
         }
         
         .cta-button {
             display: inline-block;
-            background: linear-gradient(45deg, var(--vintage-gold), #e6c659);
+            background: linear-gradient(135deg, var(--primary-red), var(--dark-red));
             color: white;
-            padding: 1rem 2.5rem;
+            padding: 1.2rem 3rem;
             text-decoration: none;
             border-radius: 50px;
             font-weight: 600;
+            font-size: 1.1rem;
             transition: all 0.3s ease;
-            box-shadow: var(--shadow-soft);
+            box-shadow: var(--shadow-medium);
             position: relative;
             overflow: hidden;
-            border: 2px solid var(--vintage-gold);
+            border: none;
+            cursor: pointer;
         }
         
         .cta-button::before {
@@ -226,49 +246,60 @@
         
         .cta-button:hover {
             transform: translateY(-3px);
-            box-shadow: var(--shadow-hover);
+            box-shadow: var(--shadow-heavy);
         }
         
         .services {
             padding: 6rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
+            background: var(--pure-white);
         }
         
         .section-title {
             font-family: 'Playfair Display', serif;
-            font-size: 3rem;
+            font-size: 3.5rem;
             text-align: center;
-            margin-bottom: 3rem;
-            color: var(--vintage-brown);
+            margin-bottom: 1rem;
+            color: var(--charcoal);
             position: relative;
+        }
+        
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--medium-gray);
+            margin-bottom: 4rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
         }
         
         .section-title::after {
             content: '';
             display: block;
-            width: 100px;
-            height: 3px;
-            background: var(--vintage-gold);
-            margin: 1rem auto;
+            width: 80px;
+            height: 4px;
+            background: var(--primary-red);
+            margin: 1.5rem auto;
             border-radius: 2px;
         }
         
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
             margin-top: 4rem;
         }
         
         .service-card {
-            background: white;
-            padding: 2.5rem;
+            background: var(--pure-white);
+            padding: 3rem 2.5rem;
             border-radius: 20px;
-            box-shadow: var(--shadow-soft);
+            box-shadow: var(--shadow-light);
             text-align: center;
-            transition: all 0.3s ease;
-            border: 2px solid transparent;
+            transition: all 0.4s ease;
+            border: 1px solid var(--light-gray);
             position: relative;
             overflow: hidden;
         }
@@ -280,139 +311,214 @@
             left: 0;
             width: 100%;
             height: 4px;
-            background: linear-gradient(90deg, var(--vintage-gold), var(--vintage-rose));
+            background: linear-gradient(90deg, var(--primary-red), var(--dark-red));
         }
         
         .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: var(--shadow-hover);
-            border-color: var(--vintage-gold);
+            transform: translateY(-12px);
+            box-shadow: var(--shadow-heavy);
+            border-color: var(--light-red);
         }
         
         .service-icon {
-            font-size: 3rem;
-            color: var(--vintage-sage);
-            margin-bottom: 1.5rem;
+            font-size: 3.5rem;
+            color: var(--primary-red);
+            margin-bottom: 2rem;
             display: block;
         }
         
         .service-card h3 {
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
-            margin-bottom: 1rem;
-            color: var(--vintage-brown);
+            margin-bottom: 1.5rem;
+            color: var(--charcoal);
+        }
+        
+        .service-card p {
+            color: var(--medium-gray);
+            line-height: 1.7;
         }
         
         .gallery {
             padding: 6rem 2rem;
-            background: linear-gradient(135deg, #f9f6f0 0%, var(--vintage-cream) 100%);
+            background: var(--light-gray);
         }
         
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
+        .gallery-container {
             max-width: 1200px;
             margin: 0 auto;
         }
         
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 4rem;
+        }
+        
         .gallery-item {
             aspect-ratio: 1;
-            background: linear-gradient(45deg, var(--vintage-rose), var(--vintage-sage));
-            border-radius: 15px;
+            background: var(--pure-white);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.4s ease;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            box-shadow: var(--shadow-light);
+            border: 2px solid transparent;
+        }
+        
+        .gallery-item:hover {
+            transform: scale(1.03);
+            box-shadow: var(--shadow-medium);
+            border-color: var(--primary-red);
+        }
+        
+        .gallery-placeholder {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            color: var(--medium-gray);
+        }
+        
+        .gallery-placeholder i {
+            font-size: 4rem;
+            color: var(--primary-red);
+            margin-bottom: 1rem;
+        }
+        
+        .gallery-placeholder p {
+            font-size: 1.1rem;
+            font-weight: 500;
+        }
+        
+        .image-placeholder {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, var(--light-red), var(--primary-red));
             display: flex;
             align-items: center;
             justify-content: center;
             color: white;
             font-size: 3rem;
-            transition: all 0.3s ease;
-            cursor: pointer;
             position: relative;
-            overflow: hidden;
         }
         
-        .gallery-item::before {
+        .image-placeholder::before {
             content: '';
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.2), transparent);
             transform: translateX(-100%);
-            transition: transform 0.6s;
+            transition: transform 0.8s;
         }
         
-        .gallery-item:hover::before {
+        .gallery-item:hover .image-placeholder::before {
             transform: translateX(100%);
-        }
-        
-        .gallery-item:hover {
-            transform: scale(1.05);
-            box-shadow: var(--shadow-hover);
         }
         
         .contact {
             padding: 6rem 2rem;
             max-width: 1200px;
             margin: 0 auto;
+            background: var(--pure-white);
         }
         
         .contact-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 4rem;
-            align-items: center;
+            gap: 5rem;
+            align-items: start;
         }
         
         .contact-info {
-            background: white;
+            background: var(--pure-white);
             padding: 3rem;
-            border-radius: 20px;
-            box-shadow: var(--shadow-soft);
-            border: 2px solid var(--vintage-gold);
+            border-radius: 24px;
+            box-shadow: var(--shadow-medium);
+            border: 1px solid var(--light-gray);
         }
         
         .contact-item {
             display: flex;
             align-items: center;
-            margin-bottom: 2rem;
-            padding: 1rem;
-            background: var(--vintage-cream);
-            border-radius: 10px;
+            margin-bottom: 2.5rem;
+            padding: 1.5rem;
+            background: var(--light-gray);
+            border-radius: 16px;
             transition: all 0.3s ease;
+            border: 1px solid transparent;
         }
         
         .contact-item:hover {
             transform: translateX(10px);
-            background: rgba(212, 175, 55, 0.1);
+            background: var(--light-red);
+            border-color: var(--primary-red);
         }
         
         .contact-item i {
-            font-size: 1.5rem;
-            color: var(--vintage-gold);
-            margin-right: 1rem;
-            width: 30px;
+            font-size: 1.8rem;
+            color: var(--primary-red);
+            margin-right: 1.5rem;
+            width: 40px;
+            text-align: center;
+        }
+        
+        .contact-item-content h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.3rem;
+            color: var(--charcoal);
+            margin-bottom: 0.5rem;
+        }
+        
+        .contact-item-content p {
+            color: var(--medium-gray);
+            font-size: 1rem;
+        }
+        
+        .contact-item-content a {
+            color: var(--primary-red);
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .contact-item-content a:hover {
+            text-decoration: underline;
         }
         
         .map-placeholder {
-            background: linear-gradient(45deg, var(--vintage-sage), var(--vintage-rose));
-            border-radius: 20px;
-            height: 400px;
+            background: linear-gradient(135deg, var(--medium-gray), var(--dark-gray));
+            border-radius: 24px;
+            height: 500px;
             display: flex;
+            flex-direction: column;
             align-items: center;
             justify-content: center;
             color: white;
-            font-size: 2rem;
+            font-size: 1.5rem;
             position: relative;
             overflow: hidden;
+            box-shadow: var(--shadow-medium);
+        }
+        
+        .map-placeholder i {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            color: var(--light-red);
         }
         
         .footer {
-            background: var(--vintage-brown);
+            background: var(--charcoal);
             color: white;
-            text-align: center;
-            padding: 3rem 2rem;
+            padding: 4rem 2rem 2rem;
             position: relative;
         }
         
@@ -423,7 +529,13 @@
             left: 0;
             width: 100%;
             height: 4px;
-            background: linear-gradient(90deg, var(--vintage-gold), var(--vintage-rose), var(--vintage-sage));
+            background: linear-gradient(90deg, var(--primary-red), var(--dark-red));
+        }
+        
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
         }
         
         .social-links {
@@ -440,12 +552,64 @@
             padding: 1rem;
             border-radius: 50%;
             background: rgba(255,255,255,0.1);
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .social-links a:hover {
             transform: translateY(-5px);
-            color: var(--vintage-gold);
-            background: rgba(212, 175, 55, 0.2);
+            color: var(--primary-red);
+            background: rgba(220, 38, 38, 0.2);
+        }
+        
+        .quick-contact {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            z-index: 1000;
+        }
+        
+        .contact-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            box-shadow: var(--shadow-medium);
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .whatsapp-btn {
+            background: #25D366;
+        }
+        
+        .phone-btn {
+            background: var(--primary-red);
+        }
+        
+        .email-btn {
+            background: var(--medium-gray);
+        }
+        
+        .contact-btn:hover {
+            transform: scale(1.1);
+            box-shadow: var(--shadow-heavy);
+        }
+        
+        .share-btn {
+            background: var(--dark-gray);
+            font-size: 18px;
         }
         
         @media (max-width: 768px) {
@@ -454,7 +618,7 @@
             }
             
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 3rem;
             }
             
             .hero p {
@@ -463,10 +627,30 @@
             
             .contact-content {
                 grid-template-columns: 1fr;
+                gap: 3rem;
             }
             
             .services-grid {
                 grid-template-columns: 1fr;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+            
+            .quick-contact {
+                bottom: 15px;
+                right: 15px;
+            }
+            
+            .contact-btn {
+                width: 50px;
+                height: 50px;
+                font-size: 20px;
             }
         }
     </style>
@@ -490,119 +674,174 @@
 
     <section class="hero" id="inicio">
         <div class="hero-content">
-            <h1>Arte Floral Ecuatoriano</h1>
-            <p>Creamos momentos únicos con la belleza natural de las flores</p>
+            <h1>Calas <span class="highlight">Floristería</span></h1>
+            <p>Floristería hermosa y vanguardista ✨ 🌸 15k</p>
             <a href="#contacto" class="cta-button">Contáctanos Ahora</a>
         </div>
     </section>
 
     <section class="services" id="servicios">
         <h2 class="section-title">Nuestros Servicios</h2>
+        <p class="section-subtitle">Ofrecemos una gama completa de servicios florales para hacer de cada ocasión un momento memorable</p>
         <div class="services-grid">
             <div class="service-card">
                 <i class="fas fa-heart service-icon"></i>
                 <h3>Bodas & Eventos</h3>
-                <p>Decoración floral completa para el día más especial de tu vida. Arreglos únicos que reflejan tu personalidad y estilo.</p>
+                <p>Decoración floral completa para el día más especial de tu vida. Arreglos únicos que reflejan tu personalidad y estilo, creando ambientes mágicos e inolvidables.</p>
             </div>
             <div class="service-card">
                 <i class="fas fa-gift service-icon"></i>
                 <h3>Arreglos Personalizados</h3>
-                <p>Creaciones florales únicas diseñadas especialmente para cada ocasión. Desde regalos íntimos hasta eventos corporativos.</p>
+                <p>Creaciones florales únicas diseñadas especialmente para cada ocasión. Desde regalos íntimos hasta eventos corporativos, cada arreglo cuenta una historia especial.</p>
             </div>
             <div class="service-card">
                 <i class="fas fa-seedling service-icon"></i>
                 <h3>Plantas Decorativas</h3>
-                <p>Selección curada de plantas exóticas y tradicionales para transformar cualquier espacio en un oasis natural.</p>
+                <p>Selección curada de plantas exóticas y tradicionales para transformar cualquier espacio en un oasis natural lleno de vida y frescura.</p>
             </div>
             <div class="service-card">
                 <i class="fas fa-truck service-icon"></i>
                 <h3>Entrega a Domicilio</h3>
-                <p>Servicio de entrega confiable en toda la ciudad. Sorprende a tus seres queridos con la frescura de nuestras flores.</p>
+                <p>Servicio de entrega confiable en Quito y alrededores. Sorprende a tus seres queridos con la frescura de nuestras flores directamente en su puerta.</p>
             </div>
             <div class="service-card">
                 <i class="fas fa-calendar-alt service-icon"></i>
                 <h3>Suscripción Floral</h3>
-                <p>Mantén tus espacios siempre frescos con nuestro servicio de suscripción semanal o mensual de arreglos florales.</p>
+                <p>Mantén tus espacios siempre frescos con nuestro servicio de suscripción semanal o mensual de arreglos florales exclusivos.</p>
             </div>
             <div class="service-card">
                 <i class="fas fa-graduation-cap service-icon"></i>
                 <h3>Talleres Florales</h3>
-                <p>Aprende el arte de la floristería con nuestros talleres especializados. Desde principiantes hasta técnicas avanzadas.</p>
+                <p>Aprende el arte de la floristería con nuestros talleres especializados. Desde técnicas básicas hasta diseños avanzados para profesionales.</p>
             </div>
         </div>
     </section>
 
     <section class="gallery" id="galeria">
-        <h2 class="section-title">Galería de Creaciones</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item">🌹</div>
-            <div class="gallery-item">🌸</div>
-            <div class="gallery-item">🌺</div>
-            <div class="gallery-item">🌻</div>
-            <div class="gallery-item">🌷</div>
-            <div class="gallery-item">🏵️</div>
-            <div class="gallery-item">🌼</div>
-            <div class="gallery-item">🥀</div>
+        <div class="gallery-container">
+            <h2 class="section-title">Galería de Creaciones</h2>
+            <p class="section-subtitle">Explora nuestra colección de arreglos florales únicos, cada uno creado con pasión y dedicación artesanal</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="image-placeholder">🌹</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">💐</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">🌸</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">🌺</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">🌻</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">🌷</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">
+                        <i class="fab fa-instagram"></i>
+                        <p>Síguenos en Instagram</p>
+                        <p style="font-size: 0.9rem; margin-top: 0.5rem;">@calasfloristeria.ec</p>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <div class="image-placeholder">🏵️</div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section class="contact" id="contacto">
         <h2 class="section-title">Contáctanos</h2>
+        <p class="section-subtitle">Estamos aquí para ayudarte a crear momentos especiales. Contáctanos y hagamos realidad tus ideas florales</p>
         <div class="contact-content">
             <div class="contact-info">
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <div>
+                    <div class="contact-item-content">
                         <h4>Ubicación</h4>
-                        <p>Quito, Pichincha, Ecuador</p>
+                        <p>Quito - Tababela 🇪🇨<br>Aeropuerto Internacional Mariscal Sucre ✈️</p>
                     </div>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-phone"></i>
-                    <div>
+                    <div class="contact-item-content">
                         <h4>Teléfono</h4>
-                        <p>+593 99 XXX XXXX</p>
+                        <p><a href="tel:+59396319353">+593 96 319 3593</a><br>Link de WhatsApp aquí 👇<br><a href="https://wa.me/59396319353" target="_blank">wa.me/59396319353</a></p>
                     </div>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-envelope"></i>
-                    <div>
+                    <div class="contact-item-content">
                         <h4>Email</h4>
-                        <p>info@calasfloristeria.ec</p>
+                        <p><a href="mailto:calasfloristeriaecuador@gmail.com">calasfloristeriaecuador@gmail.com</a></p>
                     </div>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-clock"></i>
-                    <div>
+                    <div class="contact-item-content">
                         <h4>Horarios</h4>
-                        <p>Lunes a Sábado: 8:00 AM - 6:00 PM</p>
+                        <p>Lunes a Sábado: 8:00 AM - 6:00 PM<br>Domingo: Bajo pedido</p>
                     </div>
                 </div>
                 <div class="contact-item">
                     <i class="fab fa-instagram"></i>
-                    <div>
+                    <div class="contact-item-content">
                         <h4>Instagram</h4>
-                        <p>@calasfloristeria.ec</p>
+                        <p><a href="https://www.instagram.com/calasfloristeria.ec" target="_blank">@calasfloristeria.ec</a><br>Floristería hermosa y vanguardista ✨ 🌸</p>
                     </div>
                 </div>
             </div>
             <div class="map-placeholder">
                 <i class="fas fa-map"></i>
-                <p>Mapa Interactivo</p>
+                <p>Ubicación en Quito-Tababela</p>
+                <p style="font-size: 1rem; margin-top: 1rem; opacity: 0.8;">Aeropuerto Internacional Mariscal Sucre</p>
             </div>
         </div>
     </section>
 
     <footer class="footer">
-        <div class="social-links">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
-            <a href="#"><i class="fas fa-envelope"></i></a>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="https://www.instagram.com/calasfloristeria.ec" target="_blank" title="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/59396319353?text=Hola! Me interesa conocer más sobre sus servicios florales." target="_blank" title="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="tel:+59396319353" title="Teléfono">
+                    <i class="fas fa-phone"></i>
+                </a>
+                <a href="mailto:calasfloristeriaecuador@gmail.com?subject=Consulta sobre servicios florales" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p>&copy; 2025 Calas Floristería EC. Todos los derechos reservados.</p>
+            <p>Floristería hermosa y vanguardista ✨ 🌸<br>
+            @calasfloristeria<br>
+            Quito - Tababela 🇪🇨<br>
+            Aeropuerto Internacional Mariscal Sucre ✈️<br>
+            Link de WhatsApp aquí 👇</p>
         </div>
-        <p>&copy; 2025 Calas Floristería EC. Todos los derechos reservados.</p>
-        <p>Creando belleza natural desde el corazón de Ecuador</p>
     </footer>
+
+    <div class="quick-contact">
+        <button class="contact-btn share-btn" onclick="sharePage()" title="Compartir">
+            <i class="fas fa-share-alt"></i>
+        </button>
+        <button class="contact-btn email-btn" onclick="contactEmail()" title="Email">
+            <i class="fas fa-envelope"></i>
+        </button>
+        <button class="contact-btn phone-btn" onclick="contactPhone()" title="Llamar">
+            <i class="fas fa-phone"></i>
+        </button>
+        <button class="contact-btn whatsapp-btn" onclick="contactWhatsApp()" title="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+        </button>
+    </div>
 
     <script>
         // Crear pétalos flotantes
@@ -610,21 +849,21 @@
             const petal = document.createElement('div');
             petal.className = 'petal';
             petal.style.left = Math.random() * 100 + '%';
-            petal.style.animationDelay = Math.random() * 15 + 's';
-            petal.style.animationDuration = (Math.random() * 10 + 10) + 's';
+            petal.style.animationDelay = Math.random() * 20 + 's';
+            petal.style.animationDuration = (Math.random() * 10 + 15) + 's';
             document.getElementById('petals').appendChild(petal);
             
             setTimeout(() => {
                 petal.remove();
-            }, 25000);
+            }, 30000);
         }
 
         // Crear múltiples pétalos
-        setInterval(createPetal, 3000);
+        setInterval(createPetal, 4000);
         
         // Crear algunos pétalos iniciales
-        for (let i = 0; i < 5; i++) {
-            setTimeout(createPetal, i * 1000);
+        for (let i = 0; i < 6; i++) {
+            setTimeout(createPetal, i * 1500);
         }
 
         // Smooth scrolling para navegación
@@ -643,7 +882,7 @@
 
         // Animación de aparición en scroll
         const observerOptions = {
-            threshold: 0.1,
+            threshold: 0.15,
             rootMargin: '0px 0px -50px 0px'
         };
 
@@ -659,8 +898,8 @@
         // Observar elementos para animación
         document.querySelectorAll('.service-card, .gallery-item, .contact-item').forEach(el => {
             el.style.opacity = '0';
-            el.style.transform = 'translateY(30px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            el.style.transform = 'translateY(40px)';
+            el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
             observer.observe(el);
         });
 
@@ -669,55 +908,90 @@
             const scrolled = window.pageYOffset;
             const hero = document.querySelector('.hero');
             if (hero) {
-                hero.style.transform = `translateY(${scrolled * 0.5}px)`;
+                hero.style.transform = `translateY(${scrolled * 0.3}px)`;
             }
         });
 
-        // Funcionalidad de compartir y instalación PWA
+        // Funcionalidades de contacto
+        function contactWhatsApp() {
+            const message = 'Hola! Me interesa conocer más sobre sus servicios florales.';
+            const phone = '59396319353';
+            const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
+
+        function contactPhone() {
+            window.location.href = 'tel:+59396319353';
+        }
+
+        function contactEmail() {
+            window.location.href = 'mailto:calasfloristeriaecuador@gmail.com?subject=Consulta sobre servicios florales';
+        }
+
+        // Funcionalidad de compartir
         function sharePage() {
             if (navigator.share) {
                 navigator.share({
                     title: 'Calas Floristería EC',
-                    text: 'Arte Floral Ecuatoriano - Arreglos únicos para ocasiones especiales',
+                    text: 'Floristería hermosa y vanguardista - Arreglos únicos para ocasiones especiales',
                     url: window.location.href
                 });
             } else {
-                // Fallback para navegadores sin soporte nativo
                 const url = window.location.href;
                 navigator.clipboard.writeText(url).then(() => {
                     alert('¡URL copiada al portapapeles! Compártela con tus contactos.');
+                }).catch(() => {
+                    // Fallback para navegadores más antiguos
+                    const textArea = document.createElement('textarea');
+                    textArea.value = url;
+                    document.body.appendChild(textArea);
+                    textArea.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(textArea);
+                    alert('¡URL copiada al portapapeles!');
                 });
             }
         }
 
-        // Detectar instalación disponible
+        // Enlaces de galería a Instagram
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', () => {
+                window.open('https://www.instagram.com/calasfloristeria.ec', '_blank');
+            });
+        });
+
+        // Funcionalidad PWA
         let deferredPrompt;
         window.addEventListener('beforeinstallprompt', (e) => {
             e.preventDefault();
             deferredPrompt = e;
-            showInstallButton();
+            showInstallPrompt();
         });
 
-        function showInstallButton() {
-            const installButton = document.createElement('button');
-            installButton.textContent = '📱 Instalar App';
-            installButton.style.cssText = `
+        function showInstallPrompt() {
+            const installBanner = document.createElement('div');
+            installBanner.style.cssText = `
                 position: fixed;
-                bottom: 20px;
-                right: 20px;
-                background: var(--vintage-gold);
+                top: 0;
+                left: 0;
+                width: 100%;
+                background: var(--primary-red);
                 color: white;
-                border: none;
-                padding: 12px 20px;
-                border-radius: 25px;
-                font-weight: 600;
-                cursor: pointer;
-                box-shadow: var(--shadow-soft);
-                z-index: 1000;
-                font-size: 14px;
+                padding: 1rem;
+                text-align: center;
+                z-index: 10000;
+                transform: translateY(-100%);
+                transition: transform 0.3s ease;
             `;
-            installButton.addEventListener('click', installApp);
-            document.body.appendChild(installButton);
+            installBanner.innerHTML = `
+                <span>¿Instalar Calas Floristería como aplicación?</span>
+                <button onclick="installApp()" style="margin-left: 1rem; padding: 0.5rem 1rem; background: white; color: var(--primary-red); border: none; border-radius: 4px; cursor: pointer;">Instalar</button>
+                <button onclick="this.parentElement.remove()" style="margin-left: 0.5rem; padding: 0.5rem 1rem; background: transparent; color: white; border: 1px solid white; border-radius: 4px; cursor: pointer;">Cerrar</button>
+            `;
+            document.body.appendChild(installBanner);
+            setTimeout(() => {
+                installBanner.style.transform = 'translateY(0)';
+            }, 1000);
         }
 
         function installApp() {
@@ -729,92 +1003,10 @@
             }
         }
 
-        // Botón de compartir integrado
-        function addShareButton() {
-            const shareButton = document.createElement('button');
-            shareButton.innerHTML = '<i class="fas fa-share-alt"></i> Compartir';
-            shareButton.style.cssText = `
-                position: fixed;
-                bottom: 80px;
-                right: 20px;
-                background: var(--vintage-sage);
-                color: white;
-                border: none;
-                padding: 12px 20px;
-                border-radius: 25px;
-                font-weight: 600;
-                cursor: pointer;
-                box-shadow: var(--shadow-soft);
-                z-index: 1000;
-                font-size: 14px;
-            `;
-            shareButton.addEventListener('click', sharePage);
-            document.body.appendChild(shareButton);
-        }
-
-        // Inicializar funcionalidades PWA
-        document.addEventListener('DOMContentLoaded', () => {
-            addShareButton();
-            
-            // Mostrar URL actual para compartir manualmente
-            console.log('URL de la página:', window.location.href);
-            console.log('Comparte esta URL con tus clientes para que accedan a tu floristería online');
-        });
-
-        // Funcionalidad de contacto directo
-        function contactWhatsApp() {
-            const message = 'Hola! Me interesa conocer más sobre sus servicios florales.';
-            const phone = '593999999999'; // Reemplazar con número real
-            const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
-            window.open(url, '_blank');
-        }
-
-        function contactPhone() {
-            window.location.href = 'tel:+593999999999';
-        }
-
-        function contactEmail() {
-            window.location.href = 'mailto:info@calasfloristeria.ec?subject=Consulta sobre servicios florales';
-        }
-
-        // Añadir funcionalidad de contacto rápido
-        function addQuickContact() {
-            const contactContainer = document.createElement('div');
-            contactContainer.style.cssText = `
-                position: fixed;
-                bottom: 140px;
-                right: 20px;
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-                z-index: 1000;
-            `;
-
-            const whatsappBtn = document.createElement('button');
-            whatsappBtn.innerHTML = '<i class="fab fa-whatsapp"></i>';
-            whatsappBtn.style.cssText = `
-                width: 50px;
-                height: 50px;
-                border-radius: 50%;
-                border: none;
-                background: #25D366;
-                color: white;
-                font-size: 24px;
-                cursor: pointer;
-                box-shadow: var(--shadow-soft);
-                transition: transform 0.3s ease;
-            `;
-            whatsappBtn.onmouseover = () => whatsappBtn.style.transform = 'scale(1.1)';
-            whatsappBtn.onmouseout = () => whatsappBtn.style.transform = 'scale(1)';
-            whatsappBtn.addEventListener('click', contactWhatsApp);
-
-            contactContainer.appendChild(whatsappBtn);
-            document.body.appendChild(contactContainer);
-        }
-
-        // Inicializar contacto rápido
-        document.addEventListener('DOMContentLoaded', addQuickContact);
+        // Mensaje de bienvenida en consola
+        console.log('%c🌹 Calas Floristería EC', 'color: #dc2626; font-size: 20px; font-weight: bold;');
+        console.log('Página web lista para GitHub Pages');
+        console.log('Para usar: guarda este código como index.html y súbelo a tu repositorio de GitHub');
     </script>
 </body>
 </html>
-agregar paginaprincipal de calasfloristeria 
